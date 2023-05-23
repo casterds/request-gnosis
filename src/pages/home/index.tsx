@@ -124,7 +124,7 @@ export default function Home() {
         <div className="container mx-auto">
             <div className="mt-10 p2 text-center">
                 <Typography>
-                    ERC20 Payment Request
+                    {chain?.network == 'chiado' ? "xdai" : "ERC20"} Payment Request
                 </Typography>
             </div>
 

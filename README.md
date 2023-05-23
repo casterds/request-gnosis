@@ -34,8 +34,13 @@
 ### Task Cases
 
 - Implemented the payment appliaction on gnosis Testnet.
-- integrated all the requirements and it works fine.
-- payment token are supported by the request network. for gnosis chiado testnet doesn't have payment token in request network. it payment request applicable for xDai currency only.
+
+    - Base url for gnosis testnet "https://xdai.gateway.request.network/"
+    - In App.tsx, changed the baseURL for connecting the RequestNetwork to gnosis testnet
+    - In context/RequestContext.ts, changed the baseURL for connecting the RequestNetwork to gnosis testnet for createContext.
+
+- Integrated all the requirements and it works fine.
+- Payment token are supported by the request network. for gnosis chiado testnet doesn't have payment token in request network. it payment request applicable for xDai currency only.
 - Integrated with Banana wallet.
  
     - Due to account abstraction in banana, facing some issue to sign a transaction.
