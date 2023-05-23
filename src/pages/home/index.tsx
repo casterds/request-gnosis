@@ -171,7 +171,7 @@ export default function Home() {
                 <Card>
                     <CardBody>
                         <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                            My Network ERC20 Payment
+                            My Network {chain?.network == 'chiado' ? "xdai" : "ERC20"} Payment
                         </Typography>
                         <table className="w-full min-w-max table-auto text-left mt-5">
                             <thead>
