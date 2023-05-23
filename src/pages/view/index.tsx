@@ -7,9 +7,10 @@ import { useAccount } from "wagmi"
 import { utils } from "ethers"
 import { approveErc20, hasErc20Approval, hasSufficientFunds, payRequest } from "@requestnetwork/payment-processor"
 import { supportedTokens } from "../../constants"
-const { formatUnits } = utils
 import { toast } from 'react-toastify'
 import { ConnectButton } from "@rainbow-me/rainbowkit"
+const { formatUnits } = utils
+
 export default function RequestView() {
     const { requestId } = useParams<{ requestId: string }>()
     const requestClient = useRequestContext()
