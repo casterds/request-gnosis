@@ -124,7 +124,7 @@ export default function Home() {
         <div className="container mx-auto">
             <div className="mt-10 p2 text-center">
                 <Typography>
-                    {chain?.network == 'chiado' ? "xDAI" : "ERC20"} Payment Request
+                    xDAI Payment Request
                 </Typography>
             </div>
 
@@ -171,7 +171,7 @@ export default function Home() {
                 <Card>
                     <CardBody>
                         <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                            My Network {chain?.network == 'chiado' ? "xDAI" : "ERC20"} Payment
+                            My Network xDAI Payment
                         </Typography>
                         <table className="w-full min-w-max table-auto text-left mt-5">
                             <thead>
